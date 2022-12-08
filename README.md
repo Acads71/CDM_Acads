@@ -1,8 +1,8 @@
 # CDM_Acads
 Uni.' activities, projects, and exams.
 
-<div id="header" align="center">
-  <img src="https://cdn.dribbble.com/users/1708950/screenshots/4188877/developer_med.gif" width="100"/>
+<div id="header" align="left">
+  <img src="https://cdn.dribbble.com/users/1708950/screenshots/4188877/developer_med.gif" width="200"/>
 </div>
 
 <div id="badges">
