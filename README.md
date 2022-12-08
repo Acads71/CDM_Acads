@@ -6,11 +6,6 @@ Uni.' activities, projects, and exams.
 </div>
 
 <div id="badges">
-  <img src="https://img.shields.io/badge/Facebook-blue?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook Badge"/>
-  <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
-</div>
-
-<div id="badges">
   <a href="https://facebook.com/kim.hajin91">
     <img src="https://img.shields.io/badge/Facebook-blue?style=for-the-badge&logo=facebook&logoColor=white"/>
   </a>
