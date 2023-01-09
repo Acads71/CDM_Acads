@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #define p printf
-#define sc scanf
+#define s scanf
 
 
 int main()
@@ -12,13 +12,13 @@ int main()
     float quo, rs;
 
     p("Number [1] : ");
-    sc("%f", &n1);
+    s("%f", &n1);
     p("Number [2] : ");
-    sc("%f", &n2);
+    s("%f", &n2);
     p("Number [3] : ");
-    sc("%f", &n3);
+    s("%f", &n3);
 
-   //formulas
+    //formulas
     sum = n1+n2+n3;
     dif = n3-n2;
     prod = n1*n3;
