@@ -6,20 +6,26 @@
 #define p printf
 #define s scanf
 
+float F, C;
+char dw;
+
 int main()
 {
-    // Celsius as C, Fahrenheit as F //
-    float C, F;
+    do
+    {
+        system("cls");
+        // Temperature in Celsius //
+        p("\n Enter temperature in Fahrenheit: ");
+        s("%f", &F);
 
-    // Temperature in Celsius //
-    p("Enter temperature in Celsius: ");
-    s("%f", &C);
+        // Formula //
+        C= (F-32)*5/9;
+        // Result //
+        p(" %.1f Fahrenheit = %.1f Celsius", F, C);
 
-    // Formula //
-    F= (C * 9/5) + 32;
-
-    // Result //
-    p("%.1f Celsius = %.1f Fahrenheit", C, F);
+        p("\n\n Press Y to try again!: [Y/N]\n");
+        s("%s", &dw);
+    } while(dw=='y'||dw=='Y');
 
     return 0;
 }

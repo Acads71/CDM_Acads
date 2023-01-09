@@ -1,33 +1,38 @@
-//Include Section
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
-// Define Section
 #define p printf
 #define s scanf
 
-  float qz, asg, proj, cs, me, grade;
+float qz, asg, proj, cs, me, grade;
+char dw;
 
 int main()
 {
-// Input Section
-    p("Quiz: ");
-    	s("%f", &qz);
-    p("Assignment: ");
-    	s("%f", &asg);
-    p("Project: ");
-    	s("%f", &proj);
-    p("Class Standing: ");
-    	s("%f", &cs);
-    p("Major Exam: ");
-    	s("%f", &me);
+    do
+    {
+        system("cls");
+        p("\n Quiz: ");
+        s("%f", &qz);
+        p("\n Assignment: ");
+        s("%f", &asg);
+        p("\n Project: ");
+        s("%f", &proj);
+        p("\n Class Standing: ");
+        s("%f", &cs);
+        p("\n Major Exam: ");
+        s("%f", &me);
 
-    grade = (cs*.10) + (qz*.15) + (asg*.15) + (proj*.20) + (me*.40); // Formula
+        grade=(cs*.10)+(qz*.15)+(asg*.15)+(proj*.20)+(me*.40); // Formula
 
-    system("cls"); 
-  
-    p("Grade: %.2f", grade);
+        system("cls");
 
-return 0;
+        p("\n Grade: %.2f", grade);
+
+        p("\n\n Press Y to try again!: [Y/N]\n");
+        s("%s", &dw);
+    } while(dw=='y'||dw=='Y');
+	
+    return 0;
 }
