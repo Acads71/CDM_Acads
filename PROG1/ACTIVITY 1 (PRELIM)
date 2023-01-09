@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define p printf
+#define sc scanf
+
+int main()
+{
+    //Personal Information
+    p("------------------------------ REGISTRATION FORM ------------------------------- \n\n");
+    p("Name           : Tutungan Jameel U. \n");
+    p("Age            : 18 \n");
+    p("Birthday       : July 10, 2004 \n");
+    p("Address        : Blk 15 Lot 23 Phase 1D, KV-1, San Jose, Rodriguez, Rizal \n");
+    p("Contact Number : ---\n");
+    p("Email          : tutunganjameelu1@gmail.com \n");
+    p("Citizenship    : Filipino \n");
+    p("Father's Name  : Rudy Tutungan \n");
+    p("Mother's Name  : Fatima Tutungan \n\n");
+
+    //For Education
+    p("----------------------------- EDUCATION ATTAINMENT ----------------------------- \n\n");
+    p("Primary        : Faith Christian Academy of Rodriguez Rizal \n");
+    p("Secondary      : Kasiglahan Village National High School \n");
+    p("Tertiary       : Kasiglahan Village Senior High School \n\n");
+    //For College
+    p("1st Choice     : BSIT\n");
+    p("2nd Choice     : BSCpE\n");
+    p("3rd Choice     : --- \n");
+
+}
