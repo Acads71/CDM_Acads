@@ -25,8 +25,8 @@ int main()
 
     grade = (cs*.10) + (qz*.15) + (asg*.15) + (proj*.20) + (me*.40); // Formula
 
-    system("cls"); // Clears the console; Windows OS, change it to "clear" if you're using Linux.
-
+    system("cls"); 
+  
     p("Grade: %.2f", grade);
 
 return 0;
