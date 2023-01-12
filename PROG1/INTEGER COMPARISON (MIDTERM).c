@@ -3,28 +3,36 @@
 #define p printf
 #define s scanf
 
+int x, y;
+char dw;
+
 int main()
 {
-    int a, b;
-  
-    p("Value of A: ");
-    s("%i", &a);
-    p("Value of B: ");
-    s("%i", &b);
+    do
+    {
+        system("cls");
+        p("\n Value of X: ");
+        s("%i", &x);
+        p("\n Value of Y: ");
+        s("%i", &y);
 
-    p("\n");
+        if (x > y)
+        {
+            printf("\n The highest value is X with the value of: %i \n", x);
+        }
+        else if (x < y)
+        {
+            printf("\n The highest value is Y with the value of: %i \n", y);
+        }
+        else if (x == y)
+        {
+            printf("\n The value of X and Y are the same, the value is: %i \n", x);
+        }
 
-    if(a>b){
-        p("The Value of A is %i", a);
-    }
-    if(a<b){
-        p("The Value of B is %i", b);
-    }
-    if(a==b){
-        p("The Value of A is %i and it is equal to the Value of B is %i", a,b);
-    }
+        p("\n\n Press Y to try again!: [Y/N]");
+        s("%s", &dw);
 
-    p("\n");
-  
+    } while(dw=='y'||dw=='Y');
+
     return 0;
 }
