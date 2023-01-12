@@ -3,27 +3,29 @@
 #define p printf
 #define s scanf
 
-    int num;
-	char dw;
+int num;
+char dw;
 
 int main()
 {
-    do {
-    p("Enter Number : ");
-    s("%i", &num);
+    do
+    {
+        system("cls");
+        p("\n Enter Number : ");
+        s("%i", &num);
 
-    p("\n");
+        if(num >= 0)
+        {
+            p("\n The number is positive!");
+        }
+        else
+        {
+            p("\n The number is negative!");
+        }
 
-    if(num >= 0){
-        p("POSITIVE NUMBER!!!");
-    }
-    else{
-        p("NEGATIVE NUMBER!!!");
-    }
-	
-	p("\n\n Press Y to try again!: [Y/N]");
-	s("%s", &dw);
-	} while(dw=='y'||dw=='Y');
+        p("\n\n Press Y to try again!: [Y/N]");
+        s("%s", &dw);
+    } while(dw=='y'||dw=='Y');
 
 
     return 0;
