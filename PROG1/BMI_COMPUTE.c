@@ -1,19 +1,20 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-
 #define p printf
 #define s scanf
 
    float weight, height, bmi;
+   char dw;
 
 int main()
 {
-
+    do {
+	system("cls");
 	p("Enter the Weight: ");
-		s("%f", &weight);
+	s("%f", &weight);
 	p("Enter the Height: ");
-		s("%f", &height);
+	s("%f", &height);
 
 	bmi=weight/(height*height);
 
@@ -53,6 +54,10 @@ int main()
 			{
 				p(" Wrong Entry\n");
 			}
+
+	  p("\n\n Press Y to try again!: [Y/N]");
+	  s("%s", &dw);		
+	} while(dw=='y'||dw=='Y');
 
 return 0;
 }
